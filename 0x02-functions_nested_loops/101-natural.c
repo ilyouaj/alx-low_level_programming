@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- *Description: computes the sum of all
- *             the multiple of 3 or 5 
- *             bellow 1024 (excluded)
+ * Description: computes the sum of all
+ *		the multiple of 3 or 5 
+ *		bellow 1024 (excluded)
  *
  * Return: Always 0 (success)
 */
@@ -22,4 +22,3 @@ int main(void)
 	printf("%d\n", sum);
 	return (0);
 }
-
