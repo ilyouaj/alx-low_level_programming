@@ -8,7 +8,9 @@
  *
  * Return: Nothing
  */
-void reset_to_98(int *n)
-{
-	*n = 98;
+int main() {
+	int number = 5;
+	reset_to_98(&number);
+	printf("%d\n", number);
+	return 0;
 }
