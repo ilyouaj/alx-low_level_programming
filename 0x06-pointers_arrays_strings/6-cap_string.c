@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * islower - determines whether ascci is lowercase
+ * isLower - determines whether ascci is lowercase
  * @c: character
  * Return: 1 if true, 0 if false
  */
 
-int islower(char c)
+int isLower(char c)
 {
 	return (c >= 97 && c <= 122);
 }
@@ -21,7 +21,7 @@ int islower(char c)
 int isDelimiter(char c)
 {
 	int i;
-	char delimiter[] = "\t\n,.!?\"()[]";
+	char delimiter[] = " \t\n,.!?\"()[]";
 
 	for (i = 0; i < 12; i++)
 		if (c == delimiter[i])
@@ -43,8 +43,8 @@ char *cap_string(char *s)
 	while (*s)
 	{
 		if (isDelimiter(*s))
-			foundDelimt = 1;
-		else if (islower(*s) && foundDeilimit)
+			foundDelimit = 1;
+		else if (isLower(*s) && foundDelimit)
 		{
 			*s -= 32;
 			foundDelimit = 0;
